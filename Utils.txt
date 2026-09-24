@@ -1,0 +1,449 @@
+Not Found
+======================================================================================================================================
+
+<main className="flex flex-1 items-center bg-[#f5f7f3] px-6 py-12 text-[#123044] lg:px-10">
+            <section className="mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-16">
+                <div className="max-w-2xl">
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#177e89]">Error de navegación</p>
+                    <h1 className="mt-5 text-5xl font-semibold leading-[0.98] tracking-tight sm:text-6xl lg:text-7xl">
+                        Página no encontrada
+                    </h1>
+                    <p className="mt-7 max-w-xl text-lg leading-8 text-[#123044]/75">
+                        La dirección que buscas no está disponible o pudo haber cambiado. Regresa al inicio para continuar explorando.
+                    </p>
+                    <div className="mt-10 flex flex-wrap items-center gap-5">
+                        <a
+                            href="/"
+                            className="inline-flex items-center rounded-md bg-[#123044] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#177e89] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#177e89]"
+                        >
+                            Ir al inicio
+                        </a>
+                        <a href="/blog" className="text-sm font-bold text-[#177e89] underline decoration-2 underline-offset-4 transition-colors hover:text-[#123044]">
+                            Ver el blog
+                        </a>
+                    </div>
+                </div>
+
+                <div className="relative min-h-72 overflow-hidden rounded-md bg-[#177e89] p-8 text-white sm:min-h-80 sm:p-10">
+                    <span className="absolute -right-14 -top-14 h-52 w-52 rounded-full border-[28px] border-[#d9ef3c]" aria-hidden="true" />
+                    <div className="absolute bottom-8 right-8 grid grid-cols-3 gap-2 opacity-90" aria-hidden="true">
+                        {[...Array(9)].map((_, index) => (
+                            <span key={index} className="h-3 w-3 rounded-full bg-white" />
+                        ))}
+                    </div>
+                    <div className="relative flex h-full flex-col justify-between">
+                        <span className="text-sm font-bold uppercase tracking-[0.18em] text-[#d9ef3c]">UTVT</span>
+                        <div>
+                            <p className="text-7xl font-semibold leading-none tracking-tight sm:text-8xl">404</p>
+                            <p className="mt-4 max-w-xs text-xl font-medium leading-tight">Sigamos creando soluciones desde el lugar correcto.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+Header
+======================================================================================================================================
+
+<header className="flex w-full flex-wrap items-center justify-between gap-x-6 gap-y-4 border-b border-zinc-200 pb-5 dark:border-zinc-800">
+            <a
+                href="/"
+                className="group flex items-center gap-2 text-lg font-semibold tracking-tight text-zinc-900 dark:text-white"
+                aria-label="UTVT, inicio"
+            >
+                <svg
+                    className="h-10 w-10 transition-transform duration-200 group-hover:scale-105"
+                    viewBox="0 0 64 64"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="UTVT"
+                >
+                    <path
+                        d="M8 13H18L23 39L28 13H37L30 50H17L8 13Z"
+                        fill="#00843D"
+                    />
+
+                    <path
+                        d="M26 13H37L42 37L47 13H57L49 50H36L32 31L28 50H18L26 13Z"
+                        fill="#005A32"
+                    />
+
+                    <path
+                        d="M18 8H47"
+                        stroke="#00843D"
+                        strokeWidth="5"
+                        strokeLinecap="square"
+                    />
+                </svg>
+                <span>UTVT</span>
+            </a>
+
+            <nav aria-label="Navegacion principal" className="order-3 w-full sm:order-0 sm:w-auto">
+                <ul className="flex items-center gap-5 overflow-x-auto text-sm font-medium text-zinc-600 dark:text-zinc-400">
+                    <li>
+                        <a>
+                            Mi carrera
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/about" >
+                            Acerca de
+                        </a>
+                    </li>
+
+                    <li>
+                        <a 
+                            href="/blog">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li><a className="whitespace-nowrap transition-colors hover:text-cyan-600 dark:hover:text-cyan-400" href="https://nextjs.org/docs/app/getting-started/project-structure">Next.js</a></li>
+                </ul>
+            </nav>
+
+            <div className="flex items-center gap-2">
+                <a
+                    href="https://github.com/vercel/next.js/"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-md text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-white"
+                    aria-label="Repositorio de GitHub"
+                >
+                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.578 2 12.23c0 4.522 2.865 8.352 6.839 9.707.5.094.682-.22.682-.49 0-.24-.009-.877-.014-1.722-2.782.617-3.369-1.373-3.369-1.373-.455-1.184-1.11-1.5-1.11-1.5-.908-.637.069-.624.069-.624 1.004.073 1.532 1.056 1.532 1.056.892 1.566 2.34 1.114 2.91.852.091-.665.349-1.114.635-1.37-2.22-.26-4.555-1.14-4.555-5.073 0-1.12.39-2.035 1.03-2.753-.104-.26-.446-1.308.098-2.726 0 0 .84-.276 2.75 1.051A9.284 9.284 0 0 1 12 6.13a9.27 9.27 0 0 1 2.504.35c1.91-1.327 2.748-1.051 2.748-1.051.546 1.418.203 2.466.1 2.726.64.718 1.028 1.633 1.028 2.753 0 3.943-2.34 4.81-4.568 5.066.359.32.679.95.679 1.915 0 1.383-.012 2.498-.012 2.837 0 .273.18.59.688.489C19.14 20.578 22 16.75 22 12.23 22 6.578 17.523 2 12 2Z" clipRule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+Page
+======================================================================================================================================
+
+<div className="flex flex-1 bg-zinc-50 font-sans">
+      <main className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-12 sm:px-10 lg:grid-cols-2 lg:gap-16 lg:px-16 lg:py-20">
+        <section>
+          <p className="mb-5 text-sm font-bold tracking-[0.16em] text-emerald-700">UTVT</p>
+          <h1 className="max-w-xl text-4xl font-bold tracking-tight text-emerald-950 sm:text-5xl">
+            Ingeniería en Tecnologías de la Información e Innovación Digital
+          </h1>
+          <p className="mt-6 max-w-lg text-base leading-7 text-zinc-600">
+            Fórmate para crear soluciones digitales, desarrollar software y liderar la innovación tecnológica que impulsa a las organizaciones y a la sociedad.
+          </p>
+        </section>
+        <div className="overflow-hidden rounded-lg bg-emerald-950 shadow-xl shadow-emerald-950/15">
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=85"
+            alt="Circuito electrónico que representa la innovación tecnológica"
+            className="aspect-4/3 w-full object-cover"
+          />
+        </div>
+      </main>
+    </div>
+
+
+
+About
+======================================================================================================================================
+
+const learningAreas = [
+    "Desarrollo de software",
+    "Datos e inteligencia artificial",
+    "Infraestructura y redes",
+    "Experiencia digital",
+];
+
+function CircuitMark() {
+    return (
+        <svg viewBox="0 0 48 48" fill="none" className="h-11 w-11" aria-hidden="true">
+            <path d="M10 12h18a6 6 0 0 1 6 6v12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+            <path d="M38 36H20a6 6 0 0 1-6-6V18" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+            <circle cx="10" cy="12" r="4" fill="currentColor" />
+            <circle cx="38" cy="36" r="4" fill="currentColor" />
+        </svg>
+    );
+}
+
+
+<main className="min-h-screen overflow-hidden bg-[#f5f7f3] text-[#123044]">
+            <div className="mx-auto max-w-7xl px-6 lg:px-10">
+                <header className="flex items-center justify-between border-b border-[#123044]/15 py-5">
+                    <a href="/" className="flex items-center gap-3 font-semibold tracking-tight">
+                        <span className="grid h-10 w-10 place-items-center rounded-md bg-[#123044] text-[#d9ef3c]">
+                            <CircuitMark />
+                        </span>
+                        <span className="leading-tight">
+                            <span className="block text-sm">UTVT</span>
+                            <span className="block text-xs font-medium text-[#123044]/60">Tecnología que transforma</span>
+                        </span>
+                    </a>
+                    <a
+                        href="https://utvt.edomex.gob.mx/"
+                        className="inline-flex items-center gap-2 border-b-2 border-[#d9ef3c] pb-1 text-sm font-semibold transition-colors hover:text-[#177e89]"
+                    >
+                        Sitio institucional
+                        <span aria-hidden="true">↗</span>
+                    </a>
+                </header>
+
+                <section className="grid gap-12 py-16 lg:grid-cols-[1.15fr_.85fr] lg:py-24">
+                    <div className="max-w-3xl">
+                        <p className="mb-6 text-sm font-bold uppercase tracking-[0.18em] text-[#177e89]">
+                            Universidad Tecnológica del Valle de Toluca
+                        </p>
+                        <h1 className="max-w-3xl text-5xl font-semibold leading-[0.98] tracking-tight text-[#123044] sm:text-6xl lg:text-7xl">
+                            Ingeniería en Tecnologías de la Información e Innovación Digital
+                        </h1>
+                        <p className="mt-8 max-w-2xl text-lg leading-8 text-[#123044]/75">
+                            Una formación para imaginar, diseñar y construir soluciones tecnológicas que respondan a los retos de las organizaciones y de la sociedad.
+                        </p>
+                        <div className="mt-10 flex flex-wrap gap-3">
+                            <a
+                                href="https://utvt.edomex.gob.mx/modelo-educativo"
+                                className="inline-flex items-center rounded-md bg-[#123044] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#177e89]"
+                            >
+                                Conoce el modelo educativo
+                            </a>
+                            <a
+                                href="https://utvt.edomex.gob.mx/servicios-educativos"
+                                className="inline-flex items-center rounded-md border border-[#123044]/20 px-5 py-3 text-sm font-semibold transition-colors hover:border-[#177e89] hover:text-[#177e89]"
+                            >
+                                Servicios para estudiantes
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="relative min-h-80 overflow-hidden rounded-md bg-[#177e89] p-8 text-white sm:p-10">
+                        <div className="absolute -right-12 -top-12 h-52 w-52 rounded-full border-[28px] border-[#d9ef3c]" />
+                        <div className="absolute bottom-7 right-8 grid grid-cols-3 gap-2 opacity-90">
+                            {[...Array(9)].map((_, index) => (
+                                <span key={index} className="h-3 w-3 rounded-full bg-white" />
+                            ))}
+                        </div>
+                        <div className="relative flex h-full flex-col justify-between">
+                            <CircuitMark />
+                            <div>
+                                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#d9ef3c]">Perfil profesional</p>
+                                <p className="mt-3 max-w-sm text-2xl font-medium leading-tight">
+                                    Tecnología con visión estratégica, ética y creativa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="border-y border-[#123044]/15 py-12 lg:py-16">
+                    <div className="grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
+                        <div>
+                            <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#177e89]">Lo que impulsa</p>
+                            <h2 className="mt-3 text-3xl font-semibold tracking-tight">Talento para la economía digital</h2>
+                        </div>
+                        <p className="max-w-2xl text-lg leading-8 text-[#123044]/75">
+                            La carrera integra conocimiento técnico y aprendizaje aplicado para participar en proyectos de transformación digital, desde la concepción de una idea hasta la entrega de productos y servicios tecnológicos.
+                        </p>
+                    </div>
+
+                    <div className="mt-12 grid gap-px overflow-hidden rounded-md bg-[#123044]/15 sm:grid-cols-2 lg:grid-cols-4">
+                        {learningAreas.map((area, index) => (
+                            <article key={area} className="bg-[#f5f7f3] p-6 transition-colors hover:bg-[#d9ef3c]">
+                                <span className="text-sm font-bold text-[#177e89]">0{index + 1}</span>
+                                <h3 className="mt-8 text-xl font-semibold tracking-tight">{area}</h3>
+                            </article>
+                        ))}
+                    </div>
+                </section>
+
+                <section className="grid gap-8 py-16 lg:grid-cols-2 lg:py-24">
+                    <div className="rounded-md bg-[#123044] p-8 text-white sm:p-10">
+                        <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#d9ef3c]">Aprendizaje aplicado</p>
+                        <h2 className="mt-4 text-3xl font-semibold tracking-tight">De la idea a la solución</h2>
+                        <p className="mt-5 max-w-lg leading-7 text-white/70">
+                            Colabora, experimenta y desarrolla propuestas digitales que aporten valor en contextos reales.
+                        </p>
+                    </div>
+                    <div className="flex flex-col justify-center border-l-4 border-[#d9ef3c] pl-7 sm:pl-9">
+                        <p className="text-2xl font-semibold leading-tight tracking-tight">
+                            Una comunidad universitaria para aprender, crear y llevar más lejos cada proyecto.
+                        </p>
+                        <a href="https://utvt.edomex.gob.mx/" className="mt-7 w-fit text-sm font-bold text-[#177e89] underline decoration-2 underline-offset-4 hover:text-[#123044]">
+                            Visitar Universidad Tecnológica del Valle de Toluca
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+Blog - Page
+======================================================================================================================================
+
+
+import Link from "next/link";
+
+const blogSections = [
+    {
+        href: "/blog/actualidad-tecnologica",
+        label: "Actualidad tecnológica",
+        description: "Tendencias, herramientas y proyectos que están transformando el entorno digital.",
+        number: "01",
+    },
+    {
+        href: "/blog/areas-de-formacion",
+        label: "Áreas de formación",
+        description: "Desarrollo de software, redes, datos, ciberseguridad e innovación aplicada.",
+        number: "02",
+    },
+    {
+        href: "/blog/historias-que-inspiran",
+        label: "Historias que inspiran",
+        description: "Experiencias y publicaciones destacadas de nuestra comunidad académica.",
+        number: "03",
+    },
+];
+
+function BlogPage() {
+
+    return (
+        <main className="min-h-[calc(100vh-81px)] bg-zinc-50 px-6 py-12 text-zinc-900 sm:px-10 lg:px-16 lg:py-20">
+            <div className="mx-auto max-w-6xl">
+                <div className="grid gap-10 border-b border-emerald-900/15 pb-12 lg:grid-cols-[1.4fr_0.6fr] lg:items-end lg:pb-16">
+                    <div>
+                        <p className="mb-5 text-sm font-bold tracking-[0.16em] text-emerald-700">BLOG ACADEMICO</p>
+                        <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-emerald-950 sm:text-5xl lg:text-6xl">
+                            Ingeniería en Tecnologías de la Información e Innovación Digital
+                        </h1>
+                    </div>
+                    <p className="max-w-md border-l-2 border-cyan-500 pl-5 text-base leading-7 text-zinc-600">
+                        Conocimiento, creatividad y tecnología para diseñar soluciones que mejoran la forma en que vivimos, aprendemos y trabajamos.
+                    </p>
+                </div>
+
+                <section className="pt-10 lg:pt-14" aria-labelledby="explora-el-blog">
+                    <div className="mb-6 flex items-center justify-between gap-4">
+                        <h2 id="explora-el-blog" className="text-xl font-semibold text-emerald-950 sm:text-2xl">Explora el blog</h2>
+                        <span className="hidden text-sm font-medium text-zinc-500 sm:block">Aprende. Crea. Innova.</span>
+                    </div>
+                    <ul className="grid gap-4 md:grid-cols-3">
+                        {blogSections.map((section) => (
+                            <li key={section.href}>
+                                <Link
+                                    href={section.href}
+                                    className="group flex h-full min-h-56 flex-col justify-between rounded-lg border border-zinc-200 bg-white p-6 transition duration-200 hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-950/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-600"
+                                >
+                                    <span className="text-sm font-bold tracking-[0.14em] text-cyan-700">{section.number}</span>
+                                    <div>
+                                        <h3 className="mb-3 text-xl font-bold text-emerald-950 transition-colors group-hover:text-emerald-700">{section.label}</h3>
+                                        <p className="text-sm leading-6 text-zinc-600">{section.description}</p>
+                                    </div>
+                                    <span className="mt-6 text-sm font-semibold text-emerald-700">Ver publicaciones <span aria-hidden="true">&rarr;</span></span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+            </div>
+        </main>
+    );
+}
+
+export default BlogPage;
+
+
+Layout (Blog)  - BlogLayout
+======================================================================================================================================
+
+<div className="flex min-h-full flex-1 flex-col bg-zinc-50 text-zinc-900">
+            <header className="border-b border-emerald-950/15 bg-white px-6 sm:px-10 lg:px-16">
+                <div className="mx-auto flex max-w-6xl flex-col gap-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+                    <Link href="/blog" className="w-fit text-sm font-bold tracking-[0.14em] text-emerald-800 transition-colors hover:text-cyan-700">
+                        UTVT / BLOG ITIID
+                    </Link>
+                    <nav aria-label="Secciones del blog">
+                        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-zinc-600">
+                            <li><Link href="/blog/articulos-recientes" className="transition-colors hover:text-emerald-700">Actualidad</Link></li>
+                            <li><Link href="/blog/categorias" className="transition-colors hover:text-emerald-700">Áreas</Link></li>
+                            <li><Link href="/blog/populares" className="transition-colors hover:text-emerald-700">Historias</Link></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            {children}
+
+            <footer className="mt-auto border-t border-emerald-950/15 bg-white px-6 py-6 sm:px-10 lg:px-16">
+                <div className="mx-auto flex max-w-6xl flex-col gap-2 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between">
+                    <p>Ingeniería en Tecnologías de la Información e Innovación Digital</p>
+                    <Link href="/" className="w-fit font-semibold text-emerald-700 transition-colors hover:text-cyan-700">Volver al inicio</Link>
+                </div>
+            </footer>
+        </div>
+
+
+Slug - Page
+======================================================================================================================================
+
+const blogPosts: Record<string, { title: string; paragraphs: string[] }> = {
+    "actualidad-tecnologica": {
+        title: "Actualidad tecnológica",
+        paragraphs: [
+            "La tecnología evoluciona a gran velocidad y abre nuevas posibilidades para resolver necesidades reales. La inteligencia artificial, la nube y la automatización están transformando la manera de crear productos y servicios.",
+            "Mantenerse al día permite tomar mejores decisiones, identificar oportunidades y participar con criterio en la construcción de un entorno digital más útil y responsable.",
+        ],
+    },
+    "areas-de-formacion": {
+        title: "Áreas de formación",
+        paragraphs: [
+            "La formación en tecnologías de la información reúne conocimientos de desarrollo de software, redes, datos, ciberseguridad e innovación. Cada área aporta herramientas para comprender y transformar el mundo digital.",
+            "Explorar distintas especialidades ayuda a construir un perfil versátil, capaz de colaborar, aprender continuamente y diseñar soluciones con impacto.",
+        ],
+    },
+    "historias-que-inspiran": {
+        title: "Historias que inspiran",
+        paragraphs: [
+            "Los proyectos y experiencias de nuestra comunidad muestran que las ideas crecen cuando se comparten. Cada reto superado deja aprendizajes que pueden inspirar a otras personas a comenzar.",
+            "Conocer estas historias nos recuerda que la curiosidad, la colaboración y la constancia son parte esencial de cualquier camino de innovación.",
+        ],
+    },
+};
+
+
+
+ <div className="mx-auto max-w-3xl px-6 py-12">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                {post.title}
+            </h1>
+            {post.paragraphs.map((paragraph, index) => (
+                <p key={paragraph} className={index === 0 ? "mb-4 text-lg leading-8 text-gray-600" : "text-lg leading-8 text-gray-600"}>
+                    {paragraph}
+                </p>
+            ))}
+        </div>
+
+
+
+
+NavigationLink 
+======================================================================================================================================
+"use client";
+
+
+const pathname = usePathname();
+
+    const isActive =
+        pathname === href ||
+        (href !== "/" && pathname.startsWith(`${href}/`));
+
+    const className = `
+        whitespace-nowrap
+        rounded-md
+        px-2
+        py-1
+        transition-colors
+        ${isActive
+            ? "bg-cyan-100 text-cyan-800 dark:bg-cyan-950 dark:text-cyan-200"
+            : "hover:text-cyan-600 dark:hover:text-cyan-400"
+        }
+    `;
+
+
+
